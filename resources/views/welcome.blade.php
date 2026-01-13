@@ -205,51 +205,20 @@
 
 
 
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع الوظائف</title>
 
-    <!-- Tailwind -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-gray-100">
+<body class="bg-lightBg flex items-center justify-center min-h-screen">
 
-    <div class="bg-white shadow-xl rounded-2xl max-w-md w-full p-8 border">
-
-        <h1 class="text-2xl font-bold text-center text-gray-800 mb-3">
-            مرحبًا بك 👋
-        </h1>
-
-        <p class="text-center text-gray-600 mb-6">
-            منصة لإدارة الوظائف والتقديم عليها بسهولة
-        </p>
-
-        <div class="flex justify-center gap-4 mb-6">
-            <a href="{{ route('login') }}"
-               class="px-6 py-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition">
-               تسجيل الدخول
-            </a>
-
-            <a href="{{ route('register') }}"
-               class="px-6 py-2 rounded-lg bg-green-600 text-white font-semibold shadow hover:bg-green-700 transition">
-               تسجيل جديد
-            </a>
-        </div>
-
-        <p class="text-center text-gray-500 text-sm">
-            اختر تسجيل الدخول إذا كان لديك حساب أو قم بإنشاء حساب جديد للبدء.
-        </p>
-
-    </div>
-
+    <!-- خلي هنا نفس المحتوى اللي اشتغل معاك -->
+    <x-slot name="header"> <h2 class="font-semibold text-xl"> مرحبا بك في موقع الوظائف </h2> </x-slot> <div class="bg-white p-8 rounded-2xl shadow-xl border max-w-md mx-auto"> <h1 class="text-2xl font-bold mb-6 text-center text-darkText"> مرحبًا بك 👋 </h1> <div class="flex justify-center gap-4 mb-6"> <a href="{{ route('login') }}" class="px-5 py-2 bg-primary hover:bg-secondary transition text-white rounded-lg shadow"> تسجيل الدخول </a> <a href="{{ route('register') }}" class="px-5 py-2 bg-green-600 hover:bg-green-700 transition text-white rounded-lg shadow"> تسجيل جديد </a> </div> <p class="text-center text-gray-600 text-sm"> اختر تسجيل الدخول إذا كان لديك حساب أو تسجيل جديد لإنشاء حساب جديد. </p> </div>
+    
 </body>
 </html>
-
-
-
-
-

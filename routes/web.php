@@ -6,6 +6,7 @@ use App\Http\Controllers\ApplicantController;
 use App\Http\Controllers\EmployerController;
 use App\Http\Middleware\CheckRole;
 
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard
